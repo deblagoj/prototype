@@ -60,6 +60,7 @@
 										<option value='notsel'>Select type</option>
 										<option value='storage_sdp'> Storage Discretization</option>
 										<option value='inflow_sdp1'>Inflow</option>
+                                        <option value='inflow_sdp1_mid'>Inflow_mid</option>
 										<option value='demandtown_sdp_pz'>Demand town pz</option>
                                         <option value='demandtown_sdp_ss'>Demand town ss</option>
 										<option value='demandagriculture_sdp_uz'>Demand agriculture uz</option>
@@ -69,6 +70,7 @@
 										<option value='recreation_sdp'>Recreation</option>
                                         <option value='demandhydropower_sdp'>hydropower</option>
 										 <option value='inflow_sdp_sim'>inflow_sim</option>
+                                         <option value='inflow_sdp_sim_mid'>inflow_sim_mid</option>
 									</select> 								
 								<input name='ufile' type='file' size='28' id='ufile1' />
 								<input type='submit' value='uploadSDP' name='uploadSDP' />
