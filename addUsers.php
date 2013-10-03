@@ -817,7 +817,7 @@ function PopUpLogout()
 	<td><input type="text" name="country" maxlength="50" autocomplete="off"></input></td>
 	</tr>
 	<tr>
-	<td><div align="right"><input type="reset" name="reset" value="Errese"></input></div></td>
+	<td><div align="right"><input type="reset" name="reset" value="Erase"></input></div></td>
 	<td><input type="submit" name="submit" value="Add User"></input></td>
 	</tr>
 	</table>	

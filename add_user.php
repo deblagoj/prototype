@@ -13,8 +13,8 @@ $errflag = false;
 	else
 	{
 		$getUser = $_POST["username"];
-		$username = mysql_real_escape_string($getUser);
-		
+		//$username = mysql_real_escape_string($getUser);
+		$username = pg_escape_string($getUser);
 		if($_POST['password']==null)
 		{
 			$errmsg_arr[] = '<font color="red">Please eneter password</font>';
@@ -30,18 +30,18 @@ $errflag = false;
 			else
 			{
 				$getPass = $_POST["password"];
-				$password=mysql_real_escape_string($getPass);
-				
-				$nameSurname=mysql_real_escape_string($_POST['name_surname']);
-				$city=mysql_real_escape_string($_POST['city']);
-				$country=mysql_real_escape_string($_POST['country']);
+				//$password=mysql_real_escape_string($getPass);
+				$password=pg_escape_string($getPass);
+				$nameSurname=pg_escape_string($_POST['name_surname']);
+				$city=pg_escape_string($_POST['city']);
+				$country=pg_escape_string($_POST['country']);
 				$status=1;
 				$date=date("Y-m-d H:i:s");
 				
 				include('db.php');
 				$getUser="SELECT username FROM users WHERE username='$username'";				
-				$result = mysql_query($getUser);
-				$number_of_rows = mysql_num_rows($result);
+				$result = pg_query($getUser);
+				$number_of_rows = pg_num_rows($result);
 				
 				
 				if($number_of_rows==1)
