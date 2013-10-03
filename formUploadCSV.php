@@ -75,9 +75,7 @@
 							</div>
 							</br>
 							<div>
-							<p>
-							Red1:<input type="text" name="text1">&nbsp;&nbsp;&nbsp;&nbsp Red2 <input type="text" name="text2">
-							</p>
+							
 							</div>
 						</form>
 					</div>
