@@ -702,10 +702,10 @@ reservoir.events.on({
 	
 	
 			
-		var form2 = "<form id='uploadform' enctype='multipart/form-data' action='upload.php' method='post'>        <br/>    <select name='typedb' id='wroselect'>            <option value='notsel'>Select type</option>            <option value='storage'> Storage Discretization</option>            <option value='inflow'>Inflow</option>               <option value='demandecology'>Demand Ecology</option>         <option value='flood'>Flood</option>            <option value='recreation'>Recreation</option>   <option value='demandhydropower'>Hydro Power</option> <option value='inflow_mid'>Middle inflow</option> <option value='inflow_mid_hk'>Inflow Middle HK</option>   <option value='inflow_mid_lu'>Middle inflow LU</option>   <option value='demandtown_pz'>Probistip Zletovo</option> <option value='demandtown_ss'>Shtip Sv Nikole</option> <option value='demandagriculture_lz'>Demand Agriculgure LZ</option>   <option value='demandagriculture_uz'>Demand Agriculgure UZ</option></select>                       <input name='ufile' type='file' size='28' id='ufile1' /> <input type='submit' value='Upload' name='upload' /><span id='status' style='display:none'>...</span><iframe id='target_iframe' name='target_iframe' src='' style='width:0;height:0;border:0px'></iframe></form>";
+		var form2 = "<form enctype='multipart/form-data' action='upload_land_table.php' method='post'><br/><fieldset><legend>TimeSeries Data</legend> <select name='typedb'>        <option value='notsel'>Select type</option>        <option value='inflow'>Inflow</option>               </select>    <div style='width:240px;'><input name='ufile2' type='file' size='28' id='ufile2'/></div>      <input type='hidden' name='imeto_za_tabela' value="+table_name_land+"/>    <input type='submit' value='Upload' name='upload' />        </form></div>        <br/>        <p><span id='info'></span></p></fieldset>";
 		
 		var form3="<br/><input type = 'button'  value = 'Dynamic Programming alghorithm' onClick='myfuncdp()'><br/><input type = 'button'  value = 'Reinforcement Learning alghorithm' onClick='myfuncrl()'>";
-		
+	//	var form3="<?php	include('formUploadCSV.php');		?>";
 			
 		
 		document.getElementById("form-id").innerHTML=form_reservoir;
@@ -836,6 +836,10 @@ function PopUpLogout()
     </div>
 <br/>        
 <p><span id="info"></span></p>
+
+<li><a href="#form-id2" rel="tab-link" onClick="" style="color:#790e0e; font-weight:500;"></a></li> 
+	</ul>
+
 
     </div>
     </div>
