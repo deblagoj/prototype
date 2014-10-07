@@ -161,7 +161,7 @@ var jpl_wms = new OpenLayers.Layer.WMS( "NASA Global Mosaic",
 		version: "1.1.0",
       url: "http://localhost:8080/geoserver/wfs?",
 		//url: "http://79.99.60.36/geoserver/wfs?",
-		
+		//url: "http://194.171.38.89:8080/geoserver/wfs?",
         featureType:     "rivers",
         featureNS: "http://www.hmak.com",
 		srsName: "EPSG:4326"
@@ -705,7 +705,7 @@ reservoir.events.on({
 		var form2 = "<form enctype='multipart/form-data' action='upload_land_table.php' method='post'><br/><fieldset><legend>TimeSeries Data</legend> <select name='typedb'>        <option value='notsel'>Select type</option>        <option value='inflow'>Inflow</option>               </select>    <div style='width:240px;'><input name='ufile2' type='file' size='28' id='ufile2'/></div>      <input type='hidden' name='imeto_za_tabela' value="+table_name_land+"/>    <input type='submit' value='Upload' name='upload' />        </form></div>        <br/>        <p><span id='info'></span></p></fieldset>";
 		
 		var form3="<br/><input type = 'button'  value = 'Dynamic Programming alghorithm' onClick='myfuncdp()'><br/><input type = 'button'  value = 'Reinforcement Learning alghorithm' onClick='myfuncrl()'>";
-	//	var form3="<?php	include('formUploadCSV.php');		?>";
+
 			
 		
 		document.getElementById("form-id").innerHTML=form_reservoir;
@@ -831,7 +831,7 @@ function PopUpLogout()
     </div>
     <div id="form-id2">
 	<?php
-	include('formUploadCSV.php');	
+	//include('formUploadCSV.php');	
 	?>
     </div>
 <br/>        
